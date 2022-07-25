@@ -1,1 +1,6 @@
 /venv
+.env
+db.sqlite3
+/authapi/__pycache__
+/account/__pycache__
+
