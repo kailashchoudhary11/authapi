@@ -1,9 +1,11 @@
 from account.models import User
-from account.serializers import UserLoginSerializer, UserRegistrationSerialzier
+from account.serializers import UserLoginSerializer, UserProfileSerializer, UserRegistrationSerialzier
 from django.contrib.auth import authenticate, login
 from rest_framework import status
+from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.views import APIView
+from rest_framework_simplejwt.authentication import JWTAuthentication
 from rest_framework_simplejwt.tokens import RefreshToken
 
 def get_tokens_for_user(user):
@@ -35,4 +37,19 @@ class UserLoginView(APIView):
                 return Response({"msg": "Login Successful!", "token": token}, status.HTTP_200_OK)
             return Response({"errors": {"non_field_errors": ["Invalid Email or Password!"]}}, status.HTTP_400_BAD_REQUEST)
         return Response(serializer.errors, status.HTTP_404_NOT_FOUND)
+
+class UserProfileView(APIView):
+    authentication_classes=[JWTAuthentication]
+    permission_classes=[IsAuthenticated]
+    def get(self, request, format=None):
+        serializer = UserProfileSerializer(request.user)
+        return Response(serializer.data, status.HTTP_200_OK)
+
+
+
+
+
+
+
+
 
