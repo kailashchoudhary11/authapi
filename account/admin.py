@@ -3,7 +3,6 @@ from account.models import User
 from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
 
 # Register your models here.
-
 class UserAdmin(BaseUserAdmin):
 
     # The fields to be used in displaying the User model.
