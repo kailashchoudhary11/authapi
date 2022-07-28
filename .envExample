@@ -1,0 +1,17 @@
+# Change the name of this file to .env
+
+
+# Django project secret key
+SECRET_KEY = 'secret key'
+
+# Database Settings
+NAME = 'databasename'
+USER = 'database username'
+PASSWORD = 'password'
+HOST = '127.0.0.1'
+PORT = '5432'
+
+# Email Settings
+
+HOST_USER = 'youremail'
+HOST_PASSWORD = 'yourpassword'
