@@ -94,7 +94,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjU4OTg0MTc0LCJpYXQiOjE2NTg5ODA1NzQsImp0aSI6ImRkOWNmMjkzMjU1MDQ3NDQ4YjhkMzllMDcwMmY3ODhmIiwidXNlcl9pZCI6Nn0.kGZAcQD_6yS7xwktBfJlrT3Rq6ZCSntxNOBjVJwiNuY",
+						"value": "Bearer youraccesstoken",
 						"type": "text"
 					},
 					{
@@ -138,7 +138,7 @@
 					},
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjU4OTIxODUwLCJpYXQiOjE2NTg5MTgyNTAsImp0aSI6IjA1ZTdlZGY3ZTBhYTRhZDc4Y2E3YzllMjA5ZWY0NGY5IiwidXNlcl9pZCI6Mn0.pNA5ijEs3skB_nWDNFV_g2zMms42GKrHfyWuCKlNiWU",
+						"value": "Bearer youraccesstoken",
 						"type": "text"
 					}
 				],
